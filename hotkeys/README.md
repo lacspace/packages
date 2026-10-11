@@ -8,7 +8,7 @@
 [![install size](https://packagephobia.com/badge?p=@lacspace/hotkeys)](https://packagephobia.com/result?p=@lacspace/hotkeys)
 [![minzipped](https://img.shields.io/bundlephobia/minzip/@lacspace/hotkeys?label=minzip)](https://bundlephobia.com/package/@lacspace/hotkeys)
 [![types](https://img.shields.io/badge/types-included-blue)](https://www.npmjs.com/package/@lacspace/hotkeys)
-[![license](https://img.shields.io/npm/l/@lacspace/hotkeys?color=green)](https://github.com/lacspace/npm-packages/blob/main/LICENSE)
+[![license](https://img.shields.io/npm/l/@lacspace/hotkeys?color=green)](https://github.com/lacspace/packages/blob/main/LICENSE)
 
 </div>
 

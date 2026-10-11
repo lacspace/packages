@@ -3,9 +3,9 @@ import { parseRepository, urlTemplates } from "./repo.js";
 
 describe("parseRepository", () => {
   it("handles git+https with .git", () => {
-    const r = parseRepository("git+https://github.com/lacspace/npm-packages.git")!;
+    const r = parseRepository("git+https://github.com/lacspace/packages.git")!;
     expect(r.host).toBe("github");
-    expect(r.baseUrl).toBe("https://github.com/lacspace/npm-packages");
+    expect(r.baseUrl).toBe("https://github.com/lacspace/packages");
     expect(r.owner).toBe("lacspace");
     expect(r.name).toBe("npm-packages");
   });

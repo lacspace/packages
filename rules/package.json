@@ -19,8 +19,8 @@
   "author": "Lacspace <contact@lacspace.com>",
   "license": "SEE LICENSE IN LICENSE",
   "homepage": "https://developer.lacspace.com/packages/rules",
-  "repository": { "type": "git", "url": "git+https://github.com/lacspace/npm-packages.git", "directory": "rules" },
-  "bugs": { "url": "https://github.com/lacspace/npm-packages/issues" },
+  "repository": { "type": "git", "url": "git+https://github.com/lacspace/packages.git", "directory": "rules" },
+  "bugs": { "url": "https://github.com/lacspace/packages/issues" },
   "engines": { "node": ">=18" },
   "publishConfig": { "access": "public" }
 }

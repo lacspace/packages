@@ -491,7 +491,7 @@ Every `@lacspace/*` package follows the same rules, so once you've learned one y
 ## 🛠️ Local development
 
 ```bash
-git clone https://github.com/lacspace/npm-packages.git
+git clone https://github.com/lacspace/packages.git
 cd npm-packages
 npm install            # links the workspace packages
 npm test               # vitest across every package
@@ -623,10 +623,10 @@ No — the open packages and tools are free, and a published version stays under
 ### Support & staying updated
 
 **Where are the docs and source code?**
-Docs at developer.lacspace.com/docs (plus a PDF handbook); source at github.com/lacspace/npm-packages.
+Docs at developer.lacspace.com/docs (plus a PDF handbook); source at github.com/lacspace/packages.
 
 **How do I report a bug or request a feature?**
-Open an issue at github.com/lacspace/npm-packages/issues with the package/tool name, version and a minimal reproduction.
+Open an issue at github.com/lacspace/packages/issues with the package/tool name, version and a minimal reproduction.
 
 **How do I keep up with new packages and versions?**
 Watch the GitHub repo, follow the [@lacspace org on npm](https://www.npmjs.com/org/lacspace), and check the developer platform.
@@ -643,7 +643,7 @@ New contributors are genuinely welcome — and some of the highest-impact contri
 - **Propose a package.** Open an issue describing the one job it does. Tiny, focused, zero-dependency wins.
 
 ```bash
-git clone https://github.com/lacspace/npm-packages && cd npm-packages
+git clone https://github.com/lacspace/packages && cd npm-packages
 npm install            # workspaces link automatically
 npm test               # vitest across the monorepo
 ```

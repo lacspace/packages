@@ -55,11 +55,11 @@
   "homepage": "https://developer.lacspace.com/components?kit=date",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/lacspace/npm-packages.git",
+    "url": "git+https://github.com/lacspace/packages.git",
     "directory": "date"
   },
   "bugs": {
-    "url": "https://github.com/lacspace/npm-packages/issues"
+    "url": "https://github.com/lacspace/packages/issues"
   },
   "engines": {
     "node": ">=18"

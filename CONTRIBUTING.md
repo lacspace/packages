@@ -12,7 +12,7 @@ Thanks for being here 💙 — the `@lacspace` ecosystem is **open**, zero-depen
 ## Quick start
 
 ```bash
-git clone https://github.com/lacspace/npm-packages
+git clone https://github.com/lacspace/packages
 cd npm-packages
 npm install                 # workspaces
 cd <package>                # e.g. logo or image

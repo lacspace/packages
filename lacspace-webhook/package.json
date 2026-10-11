@@ -33,8 +33,8 @@
   "author": "Lacspace <contact@lacspace.com>",
   "license": "SEE LICENSE IN LICENSE",
   "homepage": "https://developer.lacspace.com/tools/webhook",
-  "repository": { "type": "git", "url": "git+https://github.com/lacspace/npm-packages.git", "directory": "lacspace-webhook" },
-  "bugs": { "url": "https://github.com/lacspace/npm-packages/issues" },
+  "repository": { "type": "git", "url": "git+https://github.com/lacspace/packages.git", "directory": "lacspace-webhook" },
+  "bugs": { "url": "https://github.com/lacspace/packages/issues" },
   "engines": { "node": ">=20" },
   "dependencies": {},
   "devDependencies": {

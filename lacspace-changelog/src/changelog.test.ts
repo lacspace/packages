@@ -9,7 +9,7 @@ import {
 } from "./changelog.js";
 import { parseRepository, urlTemplates } from "./repo.js";
 
-const ghUrls = urlTemplates(parseRepository("git+https://github.com/lacspace/npm-packages.git"));
+const ghUrls = urlTemplates(parseRepository("git+https://github.com/lacspace/packages.git"));
 
 describe("renderSection — grouping & order", () => {
   const commits = parseCommits([
@@ -58,13 +58,13 @@ describe("renderSection — URL templating", () => {
 
   it("links hash and PR on GitHub", () => {
     const md = renderSection(commits, { version: "1.2.0", urls: ghUrls });
-    expect(md).toContain("[abcdef1](https://github.com/lacspace/npm-packages/commit/abcdef1234)");
-    expect(md).toContain("[#12](https://github.com/lacspace/npm-packages/issues/12)");
+    expect(md).toContain("[abcdef1](https://github.com/lacspace/packages/commit/abcdef1234)");
+    expect(md).toContain("[#12](https://github.com/lacspace/packages/issues/12)");
   });
 
   it("adds a compare link when previousTag is set", () => {
     const md = renderSection(commits, { version: "1.2.0", urls: ghUrls, previousTag: "v1.1.0" });
-    expect(md).toContain("[1.2.0](https://github.com/lacspace/npm-packages/compare/v1.1.0...v1.2.0)");
+    expect(md).toContain("[1.2.0](https://github.com/lacspace/packages/compare/v1.1.0...v1.2.0)");
   });
 
   it("falls back to plain text without urls", () => {

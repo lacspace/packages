@@ -95,7 +95,7 @@ describe("analyze (end-to-end with a fake runner)", () => {
     const run = fakeRunner({
       describe: "v1.0.0\n",
       log,
-      "config --get remote.origin.url": "git@github.com:lacspace/npm-packages.git\n",
+      "config --get remote.origin.url": "git@github.com:lacspace/packages.git\n",
     });
     const a = await analyze(run, "1.0.0");
     expect(a.from).toBe("v1.0.0");

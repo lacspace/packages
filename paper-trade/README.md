@@ -8,7 +8,7 @@
 [![install size](https://packagephobia.com/badge?p=@lacspace/paper-trade)](https://packagephobia.com/result?p=@lacspace/paper-trade)
 [![minzipped](https://img.shields.io/bundlephobia/minzip/@lacspace/paper-trade?label=minzip)](https://bundlephobia.com/package/@lacspace/paper-trade)
 [![types](https://img.shields.io/badge/types-included-blue)](https://www.npmjs.com/package/@lacspace/paper-trade)
-[![license](https://img.shields.io/npm/l/@lacspace/paper-trade?color=green)](https://github.com/lacspace/npm-packages/blob/main/LICENSE)
+[![license](https://img.shields.io/npm/l/@lacspace/paper-trade?color=green)](https://github.com/lacspace/packages/blob/main/LICENSE)
 
 </div>
 

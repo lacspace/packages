@@ -8,7 +8,7 @@
 [![install size](https://packagephobia.com/badge?p=@lacspace/connectips)](https://packagephobia.com/result?p=@lacspace/connectips)
 [![minzipped](https://img.shields.io/bundlephobia/minzip/@lacspace/connectips?label=minzip)](https://bundlephobia.com/package/@lacspace/connectips)
 [![types](https://img.shields.io/badge/types-included-blue)](https://www.npmjs.com/package/@lacspace/connectips)
-[![license](https://img.shields.io/npm/l/@lacspace/connectips?color=green)](https://github.com/lacspace/npm-packages/blob/main/LICENSE)
+[![license](https://img.shields.io/npm/l/@lacspace/connectips?color=green)](https://github.com/lacspace/packages/blob/main/LICENSE)
 
 </div>
 

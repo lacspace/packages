@@ -8,7 +8,7 @@
 [![install size](https://packagephobia.com/badge?p=@lacspace/nepali-date)](https://packagephobia.com/result?p=@lacspace/nepali-date)
 [![minzipped](https://img.shields.io/bundlephobia/minzip/@lacspace/nepali-date?label=minzip)](https://bundlephobia.com/package/@lacspace/nepali-date)
 [![types](https://img.shields.io/badge/types-included-blue)](https://www.npmjs.com/package/@lacspace/nepali-date)
-[![license](https://img.shields.io/npm/l/@lacspace/nepali-date?color=green)](https://github.com/lacspace/npm-packages/blob/main/LICENSE)
+[![license](https://img.shields.io/npm/l/@lacspace/nepali-date?color=green)](https://github.com/lacspace/packages/blob/main/LICENSE)
 
 </div>
 

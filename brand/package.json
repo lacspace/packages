@@ -65,11 +65,11 @@
   "homepage": "https://developer.lacspace.com/packages/brand",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/lacspace/npm-packages.git",
+    "url": "git+https://github.com/lacspace/packages.git",
     "directory": "brand"
   },
   "bugs": {
-    "url": "https://github.com/lacspace/npm-packages/issues"
+    "url": "https://github.com/lacspace/packages/issues"
   },
   "peerDependencies": {
     "react": ">=17"

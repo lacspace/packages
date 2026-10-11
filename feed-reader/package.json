@@ -20,8 +20,8 @@
   "author": "Lacspace <contact@lacspace.com>",
   "license": "SEE LICENSE IN LICENSE",
   "homepage": "https://developer.lacspace.com/packages/feed-reader",
-  "repository": { "type": "git", "url": "git+https://github.com/lacspace/npm-packages.git", "directory": "feed-reader" },
-  "bugs": { "url": "https://github.com/lacspace/npm-packages/issues" },
+  "repository": { "type": "git", "url": "git+https://github.com/lacspace/packages.git", "directory": "feed-reader" },
+  "bugs": { "url": "https://github.com/lacspace/packages/issues" },
   "engines": { "node": ">=18" },
   "publishConfig": { "access": "public" }
 }

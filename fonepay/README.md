@@ -8,7 +8,7 @@
 [![install size](https://packagephobia.com/badge?p=@lacspace/fonepay)](https://packagephobia.com/result?p=@lacspace/fonepay)
 [![minzipped](https://img.shields.io/bundlephobia/minzip/@lacspace/fonepay?label=minzip)](https://bundlephobia.com/package/@lacspace/fonepay)
 [![types](https://img.shields.io/badge/types-included-blue)](https://www.npmjs.com/package/@lacspace/fonepay)
-[![license](https://img.shields.io/npm/l/@lacspace/fonepay?color=green)](https://github.com/lacspace/npm-packages/blob/main/LICENSE)
+[![license](https://img.shields.io/npm/l/@lacspace/fonepay?color=green)](https://github.com/lacspace/packages/blob/main/LICENSE)
 
 </div>
 

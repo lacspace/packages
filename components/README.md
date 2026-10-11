@@ -8,7 +8,7 @@
 [![install size](https://packagephobia.com/badge?p=@lacspace/components)](https://packagephobia.com/result?p=@lacspace/components)
 [![minzipped](https://img.shields.io/bundlephobia/minzip/@lacspace/components?label=minzip)](https://bundlephobia.com/package/@lacspace/components)
 [![types](https://img.shields.io/badge/types-included-blue)](https://www.npmjs.com/package/@lacspace/components)
-[![license](https://img.shields.io/npm/l/@lacspace/components?color=green)](https://github.com/lacspace/npm-packages/blob/main/LICENSE)
+[![license](https://img.shields.io/npm/l/@lacspace/components?color=green)](https://github.com/lacspace/packages/blob/main/LICENSE)
 
 </div>
 
@@ -365,4 +365,4 @@ Charts, data tables and date pickers are separate packages so you only pay for w
 
 ## Licence
 
-Lacspace Free Licence v1.0 — use it, ship it, modify it, commercially. See [`LICENSE`](https://github.com/lacspace/npm-packages/blob/main/LICENSE).
+Lacspace Free Licence v1.0 — use it, ship it, modify it, commercially. See [`LICENSE`](https://github.com/lacspace/packages/blob/main/LICENSE).

@@ -6,7 +6,7 @@
 
 [![npm version](https://img.shields.io/npm/v/create-lacspace-app?color=%2316a34a&label=npm)](https://www.npmjs.com/package/create-lacspace-app)
 [![install size](https://img.shields.io/badge/scaffold-~0.15s-16a34a)](#-benchmarks-honest-and-reproducible)
-[![license](https://img.shields.io/npm/l/create-lacspace-app?color=green)](https://github.com/lacspace/npm-packages/blob/main/LICENSE)
+[![license](https://img.shields.io/npm/l/create-lacspace-app?color=green)](https://github.com/lacspace/packages/blob/main/LICENSE)
 
 </div>
 
@@ -298,7 +298,7 @@ Node.js **20 or newer**.
 Yes. It's free under the permissive **Lacspace Free Licence v1.0**, commercial use included, and the apps you generate are entirely yours.
 
 **Where do I report a bug or request a feature?**
-Open an issue at [github.com/lacspace/npm-packages/issues](https://github.com/lacspace/npm-packages/issues).
+Open an issue at [github.com/lacspace/packages/issues](https://github.com/lacspace/packages/issues).
 
 ## Licensing
 

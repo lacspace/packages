@@ -7,7 +7,7 @@
 [![npm version](https://img.shields.io/npm/v/@lacspace/snapshot?color=%2316a34a&label=npm)](https://www.npmjs.com/package/@lacspace/snapshot)
 [![minzipped](https://img.shields.io/bundlephobia/minzip/@lacspace/snapshot?label=minzip)](https://bundlephobia.com/package/@lacspace/snapshot)
 [![types](https://img.shields.io/badge/types-included-blue)](https://www.npmjs.com/package/@lacspace/snapshot)
-[![license](https://img.shields.io/npm/l/@lacspace/snapshot?color=green)](https://github.com/lacspace/npm-packages/blob/main/LICENSE)
+[![license](https://img.shields.io/npm/l/@lacspace/snapshot?color=green)](https://github.com/lacspace/packages/blob/main/LICENSE)
 
 </div>
 
@@ -275,4 +275,4 @@ Re-exports everything above, plus:
 
 ## License
 
-Lacspace Free Licence v1.0 — see [LICENSE](https://github.com/lacspace/npm-packages/blob/main/LICENSE).
+Lacspace Free Licence v1.0 — see [LICENSE](https://github.com/lacspace/packages/blob/main/LICENSE).

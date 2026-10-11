@@ -31,8 +31,8 @@
   "author": "Lacspace <contact@lacspace.com>",
   "license": "SEE LICENSE IN LICENSE",
   "homepage": "https://developer.lacspace.com/tools/sql",
-  "repository": { "type": "git", "url": "git+https://github.com/lacspace/npm-packages.git", "directory": "lacspace-sql" },
-  "bugs": { "url": "https://github.com/lacspace/npm-packages/issues" },
+  "repository": { "type": "git", "url": "git+https://github.com/lacspace/packages.git", "directory": "lacspace-sql" },
+  "bugs": { "url": "https://github.com/lacspace/packages/issues" },
   "engines": { "node": ">=20" },
   "dependencies": {
     "lacspace-scraper": "^0.1.0"

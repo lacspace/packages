@@ -5,7 +5,7 @@
 **Scaffold a complete, production-ready SEO setup into a Next.js app in one command.**
 
 [![npm version](https://img.shields.io/npm/v/create-lacspace-seo?color=%2316a34a&label=npm)](https://www.npmjs.com/package/create-lacspace-seo)
-[![license](https://img.shields.io/npm/l/create-lacspace-seo?color=green)](https://github.com/lacspace/npm-packages/blob/main/LICENSE)
+[![license](https://img.shields.io/npm/l/create-lacspace-seo?color=green)](https://github.com/lacspace/packages/blob/main/LICENSE)
 
 </div>
 

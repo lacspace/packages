@@ -52,11 +52,11 @@
   "homepage": "https://developer.lacspace.com/tools/mcp",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/lacspace/npm-packages.git",
+    "url": "git+https://github.com/lacspace/packages.git",
     "directory": "lacspace-mcp"
   },
   "bugs": {
-    "url": "https://github.com/lacspace/npm-packages/issues"
+    "url": "https://github.com/lacspace/packages/issues"
   },
   "engines": {
     "node": ">=20"

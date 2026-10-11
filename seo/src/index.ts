@@ -813,7 +813,7 @@ export interface SoftwareSourceCodeInput {
 
 /**
  * A SoftwareSourceCode node — for open-source package / library pages.
- * @example softwareSourceCode({ name: "@lacspace/seo", codeRepository: "https://github.com/lacspace/npm-packages", programmingLanguage: "TypeScript" })
+ * @example softwareSourceCode({ name: "@lacspace/seo", codeRepository: "https://github.com/lacspace/packages", programmingLanguage: "TypeScript" })
  */
 export function softwareSourceCode(o: SoftwareSourceCodeInput): Json {
   return clean({

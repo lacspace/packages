@@ -8,7 +8,7 @@
 [![install size](https://packagephobia.com/badge?p=@lacspace/react)](https://packagephobia.com/result?p=@lacspace/react)
 [![minzipped](https://img.shields.io/bundlephobia/minzip/@lacspace/react?label=minzip)](https://bundlephobia.com/package/@lacspace/react)
 [![types](https://img.shields.io/badge/types-included-blue)](https://www.npmjs.com/package/@lacspace/react)
-[![license](https://img.shields.io/npm/l/@lacspace/react?color=green)](https://github.com/lacspace/npm-packages/blob/main/LICENSE)
+[![license](https://img.shields.io/npm/l/@lacspace/react?color=green)](https://github.com/lacspace/packages/blob/main/LICENSE)
 
 </div>
 

@@ -7,7 +7,7 @@
 [![npm version](https://img.shields.io/npm/v/@lacspace/form?color=%2316a34a&label=npm)](https://www.npmjs.com/package/@lacspace/form)
 [![minzipped](https://img.shields.io/bundlephobia/minzip/@lacspace/form?label=minzip)](https://bundlephobia.com/package/@lacspace/form)
 [![types](https://img.shields.io/badge/types-included-blue)](https://www.npmjs.com/package/@lacspace/form)
-[![license](https://img.shields.io/npm/l/@lacspace/form?color=green)](https://github.com/lacspace/npm-packages/blob/main/LICENSE)
+[![license](https://img.shields.io/npm/l/@lacspace/form?color=green)](https://github.com/lacspace/packages/blob/main/LICENSE)
 
 </div>
 

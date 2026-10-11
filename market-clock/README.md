@@ -8,7 +8,7 @@
 [![install size](https://packagephobia.com/badge?p=@lacspace/market-clock)](https://packagephobia.com/result?p=@lacspace/market-clock)
 [![minzipped](https://img.shields.io/bundlephobia/minzip/@lacspace/market-clock?label=minzip)](https://bundlephobia.com/package/@lacspace/market-clock)
 [![types](https://img.shields.io/badge/types-included-blue)](https://www.npmjs.com/package/@lacspace/market-clock)
-[![license](https://img.shields.io/npm/l/@lacspace/market-clock?color=green)](https://github.com/lacspace/npm-packages/blob/main/LICENSE)
+[![license](https://img.shields.io/npm/l/@lacspace/market-clock?color=green)](https://github.com/lacspace/packages/blob/main/LICENSE)
 
 </div>
 

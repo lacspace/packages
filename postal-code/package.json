@@ -43,11 +43,11 @@
   "homepage": "https://developer.lacspace.com/packages/postal-code",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/lacspace/npm-packages.git",
+    "url": "git+https://github.com/lacspace/packages.git",
     "directory": "postal-code"
   },
   "bugs": {
-    "url": "https://github.com/lacspace/npm-packages/issues"
+    "url": "https://github.com/lacspace/packages/issues"
   },
   "engines": {
     "node": ">=18"

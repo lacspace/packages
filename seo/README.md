@@ -8,7 +8,7 @@
 [![install size](https://packagephobia.com/badge?p=@lacspace/seo)](https://packagephobia.com/result?p=@lacspace/seo)
 [![minzipped](https://img.shields.io/bundlephobia/minzip/@lacspace/seo?label=minzip)](https://bundlephobia.com/package/@lacspace/seo)
 [![types](https://img.shields.io/badge/types-included-blue)](https://www.npmjs.com/package/@lacspace/seo)
-[![license](https://img.shields.io/npm/l/@lacspace/seo?color=green)](https://github.com/lacspace/npm-packages/blob/main/LICENSE)
+[![license](https://img.shields.io/npm/l/@lacspace/seo?color=green)](https://github.com/lacspace/packages/blob/main/LICENSE)
 
 </div>
 
@@ -298,7 +298,7 @@ qaPage([{ question: "Is it free?", acceptedAnswer: "Yes.", suggestedAnswers: ["F
 imageObject({ url: "https://x.com/hero.png", width: 1200, height: 630, caption: "Hero" });
 
 // SoftwareSourceCode — for open-source package / library pages
-softwareSourceCode({ name: "@lacspace/seo", codeRepository: "https://github.com/lacspace/npm-packages", programmingLanguage: "TypeScript", license: "https://developer.lacspace.com/licenses/lacspace-free-1.0", runtimePlatform: "Node.js" });
+softwareSourceCode({ name: "@lacspace/seo", codeRepository: "https://github.com/lacspace/packages", programmingLanguage: "TypeScript", license: "https://developer.lacspace.com/licenses/lacspace-free-1.0", runtimePlatform: "Node.js" });
 
 // ProfilePage — a page about a single person (wraps a Person as mainEntity)
 profilePage({ person: { name: "Lumi AI", url: "https://lacspace.com", jobTitle: "AI" }, dateModified: "2026-09-05" });

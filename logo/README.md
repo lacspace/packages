@@ -8,7 +8,7 @@
 [![install size](https://packagephobia.com/badge?p=@lacspace/logo)](https://packagephobia.com/result?p=@lacspace/logo)
 [![minzipped](https://img.shields.io/bundlephobia/minzip/@lacspace/logo?label=minzip)](https://bundlephobia.com/package/@lacspace/logo)
 [![types](https://img.shields.io/badge/types-included-blue)](https://www.npmjs.com/package/@lacspace/logo)
-[![license](https://img.shields.io/npm/l/@lacspace/logo?color=green)](https://github.com/lacspace/npm-packages/blob/main/LICENSE)
+[![license](https://img.shields.io/npm/l/@lacspace/logo?color=green)](https://github.com/lacspace/packages/blob/main/LICENSE)
 
 </div>
 
@@ -168,10 +168,10 @@ This generator gets smarter the more curated data it has — and **the JSON brai
 - Icons (24-grid line SVG + `keywords`) → `logo/src/data/icons.json`
 - Fonts, moods, keyword mappings → the other files in `logo/src/data/`
 
-See [CONTRIBUTING.md](https://github.com/lacspace/npm-packages/blob/main/CONTRIBUTING.md). New contributors welcome — open an issue or PR.
+See [CONTRIBUTING.md](https://github.com/lacspace/packages/blob/main/CONTRIBUTING.md). New contributors welcome — open an issue or PR.
 
 ## License
 
-[Lacspace Free Licence v1.0](https://github.com/lacspace/npm-packages/blob/main/LICENSE) — free, permissive, Lacspace-branded.
+[Lacspace Free Licence v1.0](https://github.com/lacspace/packages/blob/main/LICENSE) — free, permissive, Lacspace-branded.
 
 <div align="center"><sub>Part of the <a href="https://developer.lacspace.com/packages">Lacspace</a> ecosystem · zero-dependency · isomorphic · fully typed</sub></div>

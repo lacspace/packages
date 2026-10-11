@@ -45,11 +45,11 @@
   "homepage": "https://developer.lacspace.com/packages/unsubscribe",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/lacspace/npm-packages.git",
+    "url": "git+https://github.com/lacspace/packages.git",
     "directory": "unsubscribe"
   },
   "bugs": {
-    "url": "https://github.com/lacspace/npm-packages/issues"
+    "url": "https://github.com/lacspace/packages/issues"
   },
   "engines": {
     "node": ">=18"

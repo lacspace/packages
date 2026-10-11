@@ -8,7 +8,7 @@
 [![install size](https://packagephobia.com/badge?p=@lacspace/image)](https://packagephobia.com/result?p=@lacspace/image)
 [![minzipped](https://img.shields.io/bundlephobia/minzip/@lacspace/image?label=minzip)](https://bundlephobia.com/package/@lacspace/image)
 [![types](https://img.shields.io/badge/types-included-blue)](https://www.npmjs.com/package/@lacspace/image)
-[![license](https://img.shields.io/npm/l/@lacspace/image?color=green)](https://github.com/lacspace/npm-packages/blob/main/LICENSE)
+[![license](https://img.shields.io/npm/l/@lacspace/image?color=green)](https://github.com/lacspace/packages/blob/main/LICENSE)
 
 </div>
 
@@ -145,10 +145,10 @@ formatBytes(1536);   // "1.5 KB"
 
 ## Contributing 💙
 
-New patterns, generators and encoders are welcome — see [CONTRIBUTING.md](https://github.com/lacspace/npm-packages/blob/main/CONTRIBUTING.md). Open an issue or PR; first-time contributors welcome.
+New patterns, generators and encoders are welcome — see [CONTRIBUTING.md](https://github.com/lacspace/packages/blob/main/CONTRIBUTING.md). Open an issue or PR; first-time contributors welcome.
 
 ## License
 
-[Lacspace Free Licence v1.0](https://github.com/lacspace/npm-packages/blob/main/LICENSE) — free to use, permissive, Lacspace-branded.
+[Lacspace Free Licence v1.0](https://github.com/lacspace/packages/blob/main/LICENSE) — free to use, permissive, Lacspace-branded.
 
 <div align="center"><sub>Part of the <a href="https://developer.lacspace.com/packages">Lacspace</a> ecosystem · zero-dependency · isomorphic · fully typed</sub></div>

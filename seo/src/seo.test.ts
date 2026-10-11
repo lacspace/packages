@@ -116,7 +116,7 @@ test("imageObject includes dimensions and caption", () => {
 test("softwareSourceCode builds an open-source node", () => {
   const ld = softwareSourceCode({
     name: "@lacspace/seo",
-    codeRepository: "https://github.com/lacspace/npm-packages",
+    codeRepository: "https://github.com/lacspace/packages",
     programmingLanguage: "TypeScript",
     license: "https://lacspace.com/licenses/lacspace-free-1.0",
     runtimePlatform: "Node.js",
