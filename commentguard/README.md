@@ -37,6 +37,16 @@ Hand-moderating a Nepali comment section — mixing Devanagari, romanized Nepali
 
 The bundled lexicons are compact starters — **extend `lexicons` for your community**; the engine, categories, PII detection and actions are the durable part. Normalization lowercases and collapses elongations ("sooo"→"soo") and matches Latin, romanized-Nepali and Devanagari.
 
+## 1.3.0: finance-scam bait, Hindi abuse, Indian numbers
+
+Built for trading communities (StockYatra's global chat). Both `moderate()` and `check()` now catch:
+
+- **Finance-scam bait** in English, romanised Nepali/Hindi and Devanagari: "guaranteed profit", "sure-shot calls", "100% accuracy", "paid group", "premium tips", "multibagger", "jackpot call", "insider news", "pakka munafa", "paisa double", "ग्यारेन्टी", "पक्का नाफा", "पैसा डबल", "श्योर शॉट", "नो लॉस"… plus number shapes such as "earn 50k monthly", "2 lakh per month" and "95% accurate". In `moderate()` these raise `spam`; in `check()` they are `spam` hits with severity high.
+- **Hindi profanity**, Devanagari and romanised (चूतिया, भोसड़ी, मादरचोद, गांडू, बकचोद, लौड़ा, कमीना/कमीने, नालायक, निकम्मा, and their Latin spellings with leet/masking), on top of the English and Nepali lists.
+- **Indian mobiles** (6–9 + 9 digits, with or without +91) and **+977 / 00977 / +91** forms with any spacing. `moderate().pii.phones` is de-duplicated by digits, so "+977 9841…" and "9841…" count once.
+
+The link allowlist and your own `lexicons` / `extraAbuse` still apply on top; 1.3.0 only widens the starters.
+
 ## `check()`: strict filter for live comments (1.1.0, threats and more personal-data formats in 1.2.0)
 
 `moderate()` triages into allow / review / flag / hide. `check()` is the strict, whole-word gate a news site runs before a comment goes live:

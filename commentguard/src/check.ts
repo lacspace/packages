@@ -56,11 +56,15 @@ const ROM_HIGH = [
   "lad+o+(?:ko)?", "lado", "put+i+(?:ko)?", "ged+a+", "jhat+u+", "jhatt+u+", "chik+ne+y?", "gand+u+", "chut+i+y+a+",
   "bh?osd(?:i|ike|ika)", "madar ?chod", "mader ?chod", "behen ?chod", "bhen ?chod", "bhenchod", "lamt+o+", "dall+a+(?:ko)?",
   "har+a+m+i+", "har+a+m+ ?kh?or+(?:ko|haru)?", "kut+t+a+", "kut+i+y+a+", "sal+a+ ?kut+a+",
+  // Hindi (1.3.0)
+  "kamin(?:a|e|i)", "bak+chod", "la[uw]d[ae]", "lavd[ae]", "ch+u+t+(?:iya|iye|iyo)", "bh?osd[iu]?k[ae]", "gaa+nd[u]?", "chinal",
 ];
 const ROM_MILD = ["lund", "chik+n(?:a|i)", "khate", "pakhe", "jath+a+", "chor(?:haru|ko)?", "murkh(?:a|ha)?", "gadh(?:a|aa)", "bekar", "sala", "saala", "thukka", "bhando", "dhoti", "bhote", "madise", "chink(?:e|ey|i|y)?"];
 
 const NE_HIGH = ["मुजी", "मुजि", "मचिक्ने", "मचिक्न", "रण्डी", "रन्डी", "रांडी", "लाडो", "पुती", "गेडा", "झाटु", "झाँटु", "चिक्ने", "चिक्नी", "गान्डु", "चुतिया", "भोस्डी", "मादरचोद", "बहिनचोद", "हरामी", "हरामखोर", "हरामखोरे", "कुत्ता", "कुकुर्नी", "दल्ला", "लम्टो"];
-const NE_MILD = ["खाते", "पाखे", "जाठा", "चोर", "मूर्ख", "मुर्ख", "गधा", "बेकार", "साला", "थुक्क", "भाँड", "धोती", "भोटे", "मधिसे"];
+const NE_MILD = ["खाते", "पाखे", "जाठा", "चोर", "मूर्ख", "मुर्ख", "गधा", "बेकार", "साला", "थुक्क", "भाँड", "धोती", "भोटे", "मधिसे", "नालायक", "निकम्मा", "कमीना", "कमीने"];
+/** Hindi profanity in Devanagari (1.3.0), merged into the high list below. */
+const HI_HIGH = ["चूतिया", "चुतिये", "भोसड़ी", "भोसडी", "भोसड़ीके", "मादरचोद", "मादरचोद्", "बहनचोद", "भेनचोद", "गांडू", "गाण्डू", "बकचोद", "लौड़ा", "लौडा", "लवड़े", "लवडे", "रंडी", "रण्डी", "हरामज़ादा", "हरामजादा", "कुतिया", "चिनाल"];
 
 /**
  * Threats. Direct, first-person or second-person ones block; calls for violence against someone
@@ -86,7 +90,7 @@ const devDigits = (s: string) => s.replace(/[०-९]/g, (d) => String("०१�
 const compile = (list: string[], dev = false) => new RegExp(list.map((t) => (dev ? devWord(t) : word(t))).join("|"), "giu");
 const RE = {
   enHigh: compile(EN_HIGH), enMild: compile(EN_MILD), romHigh: compile(ROM_HIGH), romMild: compile(ROM_MILD),
-  neHigh: compile(NE_HIGH, true), neMild: compile(NE_MILD, true),
+  neHigh: compile([...NE_HIGH, ...HI_HIGH], true), neMild: compile(NE_MILD, true),
   threatHigh: compile(THREAT_HIGH), threatMild: compile(THREAT_MILD), neThreatHigh: compile(NE_THREAT_HIGH, true), neThreatMild: compile(NE_THREAT_MILD, true),
 };
 
@@ -95,6 +99,8 @@ const PERSONAL: { re: RegExp; term: string }[] = [
   { re: /(?<!\d)(?:\+?977[\s-]?)?9[678]\d[\s-]?\d{3}[\s-]?\d{4}(?!\d)/g, term: "phone" },
   // landline: 01-4XXXXXX, 061-5XXXXX, +977-1-...
   { re: /(?<!\d)(?:\+?977[\s-]?|0)(?:1|[2-9]\d)[\s-]\d{6,7}(?!\d)/g, term: "landline" },
+  // Indian mobiles (1.3.0): 6–9 + 9 digits, optional +91 / 91 / 0 and separators
+  { re: /(?<!\d)(?:\+?91[\s-]?|0)?[6-9]\d{4}[\s-]?\d{5}(?!\d)/g, term: "phone" },
   // other international numbers written as +CC ...
   { re: /(?<![\w+])\+(?!977)\d{1,3}[\s-]?\d{3,4}[\s-]?\d{3,4}[\s-]?\d{0,4}(?!\d)/g, term: "phone" },
   { re: /[\w.+-]+@[\w-]+\.[\w.-]+/g, term: "email" },
@@ -116,6 +122,14 @@ const PROMO = [
   "dm (?:me|for)", "inbox (?:me|for)", "whats ?app (?:me|now|गर्नुहोस्)", "join (?:my |our )?(?:telegram|whats ?app)", "telegram (?:group|channel) join",
   "click (?:the|this) link", "visit my (?:channel|profile|page)", "subscribe (?:my|to my)", "follow (?:me|back)", "free (?:recharge|money|followers|likes)",
   "loan (?:available|without|in \\d)", "instant loan", "paisa kamau", "पैसा कमाउनुहोस्", "घरबाटै कमाउनुहोस्",
+  // Finance-scam bait (1.3.0): how tip-sellers talk in trading chats (en / romanised / Devanagari).
+  "sure ?-?shot(?: calls?| tips?)?", "\\d{2,3} ?% ?(?:profit|returns?|sure|accuracy|accurate|guaranteed|munafa|नाफा|मुनाफ़ा|मुनाफा|रिटर्न|पक्का)",
+  "guaranteed (?:profit|returns?|income|calls?|tips?)", "profit guaranteed", "assured returns?", "fixed returns?", "risk ?-?free (?:profit|returns?|trading)", "no ?-?loss (?:trading|strategy|calls?|tips?)",
+  "paid (?:group|calls?|tips?|channel)", "premium (?:group|calls?|tips?|channel)", "tips? group", "vip (?:group|calls?|tips?)", "jackpot calls?", "multi ?baggers?",
+  "operator (?:stocks?|calls?)", "insider (?:news|tips?|info)", "inside news", "dm for (?:calls?|tips?|group)", "join my group", "monthly income", "daily income",
+  "pakka (?:profit|munafa|returns?|kamai|call)", "paisa double", "paise double", "target hit pakka", "guarantee ho",
+  "ग्यारेन्टी", "गारंटी", "गारण्टी", "पक्का (?:नाफा|मुनाफा|मुनाफ़ा|कमाइ|कमाई|रिटर्न|कल)", "निश्चित नाफा", "पैसा डबल", "दुगुना पैसा", "दोगुना पैसा",
+  "ज़रूर कमाओ", "जरूर कमाओ", "पेड ग्रुप", "प्रिमियम ग्रुप", "प्रीमियम ग्रुप", "टिप्स ग्रुप", "श्योर शॉट", "मल्टीबैगर", "जैकपॉट कॉल", "बिना जोखिम", "नो लॉस",
 ];
 const GAMBLING = ["bitcoin", "usdt", "binance", "crypto (?:signal|signals|trading|investment|earning)", "forex signals?", "betting", "1 ?x ?bet", "bet365", "dafabet", "parimatch", "stake\\.com", "casino", "jackpot", "satta", "teen ?patti", "aviator (?:game|app)", "lottery (?:winner|prize)", "मटका", "जुवा (?:खेल|एप)"];
 const PROMO_RE = new RegExp(PROMO.map(word).join("|"), "giu");

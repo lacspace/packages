@@ -4,7 +4,7 @@ export type { Category } from "./lexicons.js";
 export { LEXICONS, PATTERNS } from "./lexicons.js";
 export { check, type CheckInput, type CheckOptions, type CheckResult, type CheckHit, type Code } from "./check.js";
 
-const VERSION = "1.2.0";
+const VERSION = "1.3.0";
 
 export type Action = "allow" | "review" | "flag" | "hide";
 
@@ -51,6 +51,20 @@ function normalize(s: string): string {
     .trim();
 }
 
+/** Dedupe phone matches by their digits, so +977 98… and the bare 98… count once. */
+function uniquePhones(found: string[]): string[] {
+  const seen = new Set<string>();
+  const out: string[] = [];
+  for (const raw of found) {
+    const digits = raw.replace(/\D/g, "").replace(/^00/, "");
+    const key = digits.replace(/^(?:977|91)(?=\d{10}$)/, "");
+    if (digits.length < 10 || seen.has(key)) continue;
+    seen.add(key);
+    out.push(raw.trim());
+  }
+  return out;
+}
+
 function countHits(text: string, terms: string[]): string[] {
   const hits: string[] = [];
   for (const t of terms) {
@@ -83,8 +97,19 @@ export function moderate(comment: string, options: ModerateOptions = {}): Modera
     }
   }
 
+  // Finance-scam shapes that need numbers ("earn 50k monthly", "95% accuracy") count as spam.
+  const scamShapes = [...(comment.match(PATTERNS.scamEarn) ?? []), ...(comment.match(PATTERNS.scamPercent) ?? [])];
+  if (scamShapes.length) {
+    categories.spam = Math.min(1, Math.max(categories.spam, 0.7) + 0.1 * (scamShapes.length - 1));
+    reasons.push(`scam: ${scamShapes.slice(0, 2).map((s) => s.trim()).join(", ")}`);
+  }
+
   // PII + links (raw, not normalized, to preserve structure).
-  const phones = comment.match(PATTERNS.phoneNp) ?? [];
+  const phones = uniquePhones([
+    ...(comment.match(PATTERNS.phoneIntl) ?? []),
+    ...(comment.match(PATTERNS.phoneNp) ?? []),
+    ...(comment.match(PATTERNS.phoneIn) ?? []),
+  ]);
   const emails = comment.match(PATTERNS.email) ?? [];
   const urls = comment.match(PATTERNS.url) ?? [];
   const shorteners = comment.match(PATTERNS.shortener) ?? [];
